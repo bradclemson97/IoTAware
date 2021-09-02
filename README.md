@@ -34,4 +34,5 @@ Depending on the privacy setting selected by the user the Privacy Mediator
 either denatures the user’s face or retains unaltered video frames.
 
 ![alt text](https://github.com/bradclemson97/IoTAware/blob/main/IoTAware_System_Architecture.PNG "IoTAware Software Architecture")
+
 Figure 1: Illustration of IoTAware’s System Architecture. (IPRR = IoT Privacy Risk Repository, PSIP = Privacy Settings Implementation Point).
