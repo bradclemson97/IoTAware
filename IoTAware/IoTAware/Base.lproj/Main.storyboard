@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IoTAware-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="IoTAware" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background 1-1" translatesAutoresizingMaskIntoConstraints="NO" id="XI7-WM-AQ9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="92x-uy-njS"/>
+                                    <constraint firstAttribute="height" constant="842" id="nfk-rc-rq4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="IoTAware" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="71" y="118" width="272" height="89"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="jd1-SH-NgL"/>
+                                    <constraint firstAttribute="height" constant="89" id="umx-uq-e1J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please continue by completing the CFIP (Concerns for Information Privacy) survey. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w35-AV-g3D">
+                                <rect key="frame" x="0.5" y="310.5" width="413.5" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="324" id="7j3-SX-2vn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for registering with IoTAware." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-XS-pXB">
+                                <rect key="frame" x="11" y="208.5" width="392" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="324" id="KvF-29-pBf"/>
+                                    <constraint firstAttribute="height" constant="94" id="mq1-qb-tIu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3w-W1-lFq">
+                                <rect key="frame" x="96" y="423" width="223" height="54"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="CFIP Survey ">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ToView2:" destination="9pv-A4-QxB" eventType="touchUpInside" id="FG9-AE-xAs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w35-AV-g3D" firstAttribute="top" secondItem="qdt-XS-pXB" secondAttribute="bottom" constant="8" id="0et-kh-CO9"/>
+                            <constraint firstItem="w35-AV-g3D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="0fr-yZ-vCd"/>
+                            <constraint firstItem="W3w-W1-lFq" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="96" id="A4I-g4-aud"/>
+                            <constraint firstItem="w35-AV-g3D" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AiD-rH-gEV"/>
+                            <constraint firstItem="XI7-WM-AQ9" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="EHA-tg-4Oe"/>
+                            <constraint firstItem="qdt-XS-pXB" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="LCS-Nt-yVD"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="PNs-Uu-aZh"/>
+                            <constraint firstAttribute="bottom" secondItem="XI7-WM-AQ9" secondAttribute="bottom" id="TIn-sL-flJ"/>
+                            <constraint firstItem="qdt-XS-pXB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="ZCY-yc-4Ln"/>
+                            <constraint firstItem="qdt-XS-pXB" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="11" id="Zon-mk-eaG"/>
+                            <constraint firstItem="W3w-W1-lFq" firstAttribute="top" secondItem="w35-AV-g3D" secondAttribute="bottom" constant="57.5" id="eVU-3x-S2L"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-258.5" id="g2w-nh-xb3"/>
+                            <constraint firstItem="XI7-WM-AQ9" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ndh-e0-ayB"/>
+                            <constraint firstItem="XI7-WM-AQ9" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="oHo-UD-Zi2"/>
+                            <constraint firstItem="W3w-W1-lFq" firstAttribute="centerX" secondItem="w35-AV-g3D" secondAttribute="centerX" id="rwG-as-xXN"/>
+                            <constraint firstItem="qdt-XS-pXB" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="1.5" id="tmq-RU-vSh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="IoTAware" id="dYY-33-1E1"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="showDetail" identifier="SecondViewSegue" id="RU9-HD-vjJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659.4202898550725" y="-320.08928571428572"/>
+        </scene>
+        <!--CFIP Survey-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="IoTAware" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="CFIP Survey" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="113" y="0.0" width="188.5" height="43"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="jKj-el-ijM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="0.0" y="51" width="414" height="653"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="653" id="SqH-dQ-kF4"/>
+                                </constraints>
+                                <mutableString key="text">The following Concerns for Information Privacy (CFIP) survey aims to measure your underlying decision processes that create your attitudes toward privacy in the IoT context. 
+
+IoTAware will use this information to tailor sufficient decision support mechanisms and give you more personalised and contextual information about how your data is collected, processed and used by IoT devices and services. 
+
+The survey consists of eleven statements and should take no longer than 6 minutes to complete. Please score each statement on a scale of 1-5 between whether you strongly disagree (1) or strongly agree (5). </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm8-Ev-C74">
+                                <rect key="frame" x="56" y="728" width="91" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ToFirstView:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rl2-Kp-3gU"/>
+                                    <action selector="ToView2:" destination="9pv-A4-QxB" eventType="touchUpInside" id="2Z7-on-wFK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFj-q6-0MN">
+                                <rect key="frame" x="254" y="731" width="74" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Begin"/>
+                                <connections>
+                                    <action selector="ToThirdView:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Xfe-VA-nLd"/>
+                                    <action selector="ToView2:" destination="9pv-A4-QxB" eventType="touchUpInside" id="VGL-et-WKy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnn-6y-sbG">
+                                <rect key="frame" x="94" y="647" width="226" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="How does IoTAware work?">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPopup:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="eUI-sZ-oWj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FFj-q6-0MN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gm8-Ev-C74" secondAttribute="trailing" constant="8" symbolic="YES" id="3Ca-ct-vo3"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="FFj-q6-0MN" secondAttribute="trailing" constant="86" id="48J-Jp-Mg4"/>
+                            <constraint firstItem="gm8-Ev-C74" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="56" id="7dP-3e-lP5"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="AiC-E3-iBf"/>
+                            <constraint firstItem="gm8-Ev-C74" firstAttribute="firstBaseline" secondItem="FFj-q6-0MN" secondAttribute="baseline" id="Lsc-QG-rht"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" id="TW0-td-BCb"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="113" id="Xgt-Gi-dwg"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Zfn-nO-fzP"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="zEq-FU-wV5" secondAttribute="trailing" constant="112.5" id="bpK-rm-sT2"/>
+                            <constraint firstItem="FFj-q6-0MN" firstAttribute="top" secondItem="NDk-cv-Gan" secondAttribute="bottom" constant="27" id="dAT-Fx-U4U"/>
+                            <constraint firstItem="gm8-Ev-C74" firstAttribute="top" secondItem="NDk-cv-Gan" secondAttribute="bottom" constant="24" id="kFQ-5r-Bh9"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="pv3-zf-uFK"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="-43.5" id="rmE-wg-vXi"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="sOW-e1-pAV"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" id="uJ0-ct-fXw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" title="CFIP Survey" id="s8D-Zj-zPX"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="showDetail" identifier="FirstViewSegue" id="Ev2-WI-BQ9"/>
+                        <segue destination="xYF-Mo-cte" kind="showDetail" identifier="ThirdViewSegue" id="0zg-mq-CmF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2582.608695652174" y="-301.33928571428572"/>
+        </scene>
+        <!--My Questionnaire-->
+        <scene sceneID="G5Y-XN-Yew">
+            <objects>
+                <viewController title="My Questionnaire" id="xYF-Mo-cte" customClass="ViewController" customModule="IoTAware" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4v-PP-LJl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1. I am concerned that IoT service providers are collecting too much personal information about me. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QD-CX-wuB" userLabel="Question">
+                                <rect key="frame" x="20" y="108" width="380.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9M-wp-ArN" customClass="TDLikertScaleSelectorView" customModule="IoTAware" customModuleProvider="target">
+                                <rect key="frame" x="10" y="175.5" width="394" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qZk-53-S2e"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q2. It bothers me to give personal information to so many IoT service providers. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKw-fc-6Wm" userLabel="Question">
+                                <rect key="frame" x="20" y="295.5" width="378.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q3. IoT service providers should not use personal information for any purpose not specifically authorized by the user. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y2-hJ-bU6" userLabel="Question">
+                                <rect key="frame" x="20" y="464" width="385" height="57.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-A6-nXk">
+                                <rect key="frame" x="65" y="600" width="65" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ToView2:" destination="xYF-Mo-cte" eventType="touchUpInside" id="O0Y-xU-5Um"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-BL-TMv">
+                                <rect key="frame" x="257" y="600" width="61" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dxz-jM-9Fw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9y2-hJ-bU6" secondAttribute="trailing" priority="999" symbolic="YES" id="37Y-Qr-5Tx"/>
+                            <constraint firstItem="9y2-hJ-bU6" firstAttribute="leading" secondItem="dxz-jM-9Fw" secondAttribute="leading" priority="999" constant="20" id="3lZ-of-FqN"/>
+                            <constraint firstItem="w9M-wp-ArN" firstAttribute="leading" secondItem="dxz-jM-9Fw" secondAttribute="leading" priority="999" constant="10" id="9JC-lv-kTA"/>
+                            <constraint firstItem="dxz-jM-9Fw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bKw-fc-6Wm" secondAttribute="trailing" priority="999" symbolic="YES" id="BcC-uk-QVN"/>
+                            <constraint firstItem="6QD-CX-wuB" firstAttribute="leading" secondItem="dxz-jM-9Fw" secondAttribute="leading" priority="999" constant="20" id="Bze-Yy-gjJ"/>
+                            <constraint firstItem="w9M-wp-ArN" firstAttribute="top" secondItem="6QD-CX-wuB" secondAttribute="bottom" priority="999" constant="10" id="IDk-WT-fke"/>
+                            <constraint firstItem="dxz-jM-9Fw" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6QD-CX-wuB" secondAttribute="trailing" priority="999" symbolic="YES" id="JXL-bK-3DJ"/>
+                            <constraint firstItem="9y2-hJ-bU6" firstAttribute="top" secondItem="bKw-fc-6Wm" secondAttribute="bottom" priority="999" constant="130" id="bLs-YF-Ybz"/>
+                            <constraint firstItem="bKw-fc-6Wm" firstAttribute="top" secondItem="6QD-CX-wuB" secondAttribute="bottom" priority="999" constant="130" id="bRS-XY-00M"/>
+                            <constraint firstItem="bKw-fc-6Wm" firstAttribute="leading" secondItem="dxz-jM-9Fw" secondAttribute="leading" priority="999" constant="20" id="fLj-n2-roX"/>
+                            <constraint firstItem="6QD-CX-wuB" firstAttribute="top" secondItem="dxz-jM-9Fw" secondAttribute="top" priority="999" constant="20" id="iDT-2X-CPq"/>
+                            <constraint firstItem="dxz-jM-9Fw" firstAttribute="trailing" secondItem="w9M-wp-ArN" secondAttribute="trailing" priority="999" constant="10" id="swy-yF-Wxm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dxz-jM-9Fw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Questionaire" id="2c4-R8-GY6"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="showDetail" identifier="SecondViewBackSegue" id="sbf-Qh-e2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yZ-ez-rIv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657.9710144927537" y="389.73214285714283"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="D7x-AD-0E3">
+            <objects>
+                <viewController storyboardIdentifier="sbPopUpID" id="KQ9-vH-7JV" customClass="PopUpViewController" customModule="IoTAware" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XbK-eq-TcA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eA7-iJ-zNe">
+                                <rect key="frame" x="53.5" y="165" width="307" height="566"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How does IoTAware work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMd-tH-zrv">
+                                        <rect key="frame" x="31" y="8" width="245" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhP-Gu-xPc">
+                                        <rect key="frame" x="8" y="40" width="291" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">The CFIP survey measures your level of concern for your privacy across four constructs: Collection, Unauthorised Secondary Use, Improper Use and Errors. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-9v-500">
+                                        <rect key="frame" x="8" y="300" width="291" height="138"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Any discrepency between your privacy concerns and the privacy riskiness of a device will be presented to you in the personalised privacy nudge you receie when entering the vicinity of a risky IoT device. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leO-Et-IK8">
+                                        <rect key="frame" x="127" y="528" width="54" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePopUp:" destination="KQ9-vH-7JV" eventType="touchUpInside" id="MV6-5u-AaH"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjR-50-o1b">
+                                        <rect key="frame" x="8" y="150" width="291" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">By measuring the privacy riskiness of IoT devices across the same four constructs - when entering the vicinity of an IoT device - IoTAware will compare your privacy concern scores with the IoT device's privacy risk score. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its important that you complete the CFIP survey to enable personalised privacy notifications. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ6-vO-MHL">
+                                        <rect key="frame" x="8" y="446" width="291" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="566" id="Df0-CX-Yfy"/>
+                                    <constraint firstAttribute="width" constant="307" id="xiP-Y3-gff"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eA7-iJ-zNe" firstAttribute="centerX" secondItem="XbK-eq-TcA" secondAttribute="centerX" id="16H-Hc-S9V"/>
+                            <constraint firstItem="eA7-iJ-zNe" firstAttribute="centerY" secondItem="XbK-eq-TcA" secondAttribute="centerY" id="7Rr-2L-k2G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HMB-8d-hqp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5H6-e6-VpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3386.9565217391305" y="-301.33928571428572"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sbf-Qh-e2I"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Background 1-1" width="1080" height="1920"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>

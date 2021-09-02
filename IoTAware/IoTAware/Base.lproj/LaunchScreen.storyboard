@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading Screen-1" translatesAutoresizingMaskIntoConstraints="NO" id="AlP-BW-MiS">
+                                <rect key="frame" x="-164" y="389" width="673" height="458"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="673" id="2HY-qi-dTa"/>
+                                    <constraint firstAttribute="height" constant="458" id="oCQ-bP-azZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kav-tW-xKq">
+                                <rect key="frame" x="156" y="335" width="128" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="ZFf-6B-cAl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kav-tW-xKq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="13" id="4lF-Yn-Nnj"/>
+                            <constraint firstItem="kav-tW-xKq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-90" id="EWn-Av-ds9"/>
+                            <constraint firstItem="AlP-BW-MiS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-164" id="YPT-V2-6dG"/>
+                            <constraint firstItem="kav-tW-xKq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="apV-aj-Tct"/>
+                            <constraint firstItem="kav-tW-xKq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="bWb-s1-s8Y"/>
+                            <constraint firstItem="AlP-BW-MiS" firstAttribute="top" secondItem="kav-tW-xKq" secondAttribute="bottom" constant="8" id="gCg-f5-2Fk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kav-tW-xKq" secondAttribute="trailing" id="m2J-tk-gpb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Loading Screen-1" width="1080" height="1920"/>
+    </resources>
+</document>
